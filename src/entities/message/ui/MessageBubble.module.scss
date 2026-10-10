@@ -1,0 +1,54 @@
+@use '@/shared/styles/variables' as *;
+
+.row {
+  display: flex;
+  padding: 1px 0;
+}
+
+.incoming {
+  justify-content: flex-start;
+}
+
+.outgoing {
+  justify-content: flex-end;
+}
+
+.bubble {
+  max-width: min(65%, 560px);
+  padding: 6px 7px 8px 9px;
+  border-radius: $radius-sm;
+  font-size: 14.2px;
+  line-height: 19px;
+  color: $color-text;
+  box-shadow: $shadow-bubble;
+  overflow-wrap: anywhere;
+}
+
+.incoming .bubble {
+  background: $color-bubble-incoming;
+}
+
+.outgoing .bubble {
+  background: $color-bubble-outgoing;
+}
+
+.text {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.meta {
+  display: inline-flex;
+  float: right;
+  gap: 3px;
+  align-items: center;
+  margin: 8px 0 -6px 10px;
+  font-size: 11px;
+  line-height: 15px;
+  color: $color-text-secondary;
+  white-space: nowrap;
+}
+
+.failed {
+  color: $color-error;
+}

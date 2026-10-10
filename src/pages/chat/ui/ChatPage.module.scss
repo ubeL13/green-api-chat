@@ -1,0 +1,13 @@
+.page {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (width <= 720px) {
+  .rail,
+  .hasActiveChat .sidebar,
+  .page:not(.hasActiveChat) .window {
+    display: none;
+  }
+}

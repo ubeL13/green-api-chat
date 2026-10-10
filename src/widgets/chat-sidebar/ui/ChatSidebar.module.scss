@@ -1,0 +1,69 @@
+@use '@/shared/styles/variables' as *;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: $sidebar-width;
+  min-width: $sidebar-min-width;
+  max-width: $sidebar-max-width;
+  height: 100%;
+  border-right: 1px solid $color-border;
+  background: $color-bg-panel;
+}
+
+.header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: $header-height;
+  padding: 0 16px 0 20px;
+}
+
+.title {
+  flex: 1;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: $color-text;
+}
+
+.header .mobileLogout {
+  display: none;
+}
+
+.search {
+  padding: 0 12px 8px;
+}
+
+.status {
+  padding: 8px 20px;
+  font-size: 13px;
+  color: $color-error;
+  background: #fdecee;
+}
+
+.list {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.empty {
+  padding: 48px 24px;
+}
+
+@media (width <= 720px) {
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    border-right: none;
+  }
+
+  .header .mobileLogout {
+    display: flex;
+  }
+}

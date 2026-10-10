@@ -1,0 +1,54 @@
+@use '@/shared/styles/variables' as *;
+
+.page {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100%;
+  padding: 96px 16px 24px;
+  background: linear-gradient(to bottom, $color-accent 0, $color-accent 222px, #fcf5eb 222px);
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  border: none;
+  border-radius: 3px;
+  box-shadow:
+    0 17px 50px 0 rgb(11 20 26 / 19%),
+    0 12px 15px 0 rgb(11 20 26 / 24%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #fff;
+  background: $color-accent;
+}
+
+.title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  color: #41525d;
+}
+
+.subtitle {
+  margin: 8px 0 24px;
+  text-align: center;
+  color: $color-text-secondary;
+}
+
+@media (width <= 720px) {
+  .page {
+    padding-top: 48px;
+  }
+}
