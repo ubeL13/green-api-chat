@@ -18,6 +18,6 @@ npm install
 npm run dev
 ```
 
-Откройте http://localhost:5173 и введите `idInstance` и `apiTokenInstance`
+Откройте http://localhost:5173 и введите `API URL` `idInstance` и `apiTokenInstance`
 
 В настройках инстанса webhook URL должен быть пустым, а получение входящих уведомлений - включено
